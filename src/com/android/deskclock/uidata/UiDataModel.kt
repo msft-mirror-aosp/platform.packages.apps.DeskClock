@@ -35,9 +35,9 @@ import com.android.deskclock.timer.TimerFragment
 class UiDataModel private constructor() {
     /** Identifies each of the primary tabs within the application.  */
     enum class Tab(
-        fragmentClass: Class<*>,
-        @DrawableRes val iconResId: Int,
-        @StringRes val labelResId: Int
+        val fragmentClass: Class<*>,
+        @param:DrawableRes val iconResId: Int,
+        @param:StringRes val labelResId: Int
     ) {
         ALARMS(AlarmClockFragment::class.java, R.drawable.ic_tab_alarm, R.string.menu_alarm),
         CLOCKS(ClockFragment::class.java, R.drawable.ic_tab_clock, R.string.menu_clock),
